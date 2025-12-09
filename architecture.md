@@ -1,3 +1,4 @@
+```markdown
 # ✅ SYSTEM ARCHITECTURE DOCUMENT
 ## Online Order Tracking System
 
@@ -39,7 +40,7 @@ The database stores all operational information securely.
 ---
 
 ### 3. System Workflow Architecture
-* **Workflow Steps:** Customer selects product → Order created in `ORDERS` → `ORDER_ITEMS` added → Total calculated → Payment inserted → Delivery details assigned → Status changes until delivered.
+* **Workflow Steps:** Customer selects product → Order created in `ORDERS` → `ORDER_ITEMS` added → Total calculated → Payment inserted → Delivery details assigned → Status changes until delivery is completed.
 * **Data Flow:** User Action → PL/SQL Logic → Database → Confirmation returned.
 
 ---
@@ -71,27 +72,37 @@ This forward-compatible design supports new modules without restructuring the da
 ### 7. Conceptual Architecture Diagram
 
 ```mermaid
-graph TD
-    A[USERS (Admin, Customer, Delivery Staff)] --> P(Presentation Layer);
-    P --> L(Application Logic Layer);
-    L --> D[Data Layer (Oracle DB)];
+flowchart TD
+  subgraph USERS
+    A[Admin]
+    B[Customer]
+    C[Delivery Staff]
+  end
 
-    subgraph USERS
-        A_a(Admin)
-        A_b(Customer)
-        A_c(Delivery Staff)
-    end
+  subgraph PRESENTATION
+    P1[SQL Developer / Web UI / Customers]
+  end
 
-    subgraph Presentation Layer
-        P_a(SQL Developer / Web UI / Customers)
-    end
+  subgraph LOGIC
+    L1[PL/SQL Procedures]
+    L2[Functions]
+    L3[Packages]
+  end
 
-    subgraph Application Logic Layer
-        L_a(PL/SQL Procedures)
-        L_b(Functions)
-        L_c(Packages)
-    end
+  subgraph DATA
+    D1[Tables - PKs, FKs, Indexes]
+  end
 
-    subgraph Data Layer
-        D_a(Tables, PKs, FKs, Indexes)
-    end
+  A --> P1
+  B --> P1
+  C --> P1
+
+  P1 --> L1
+  P1 --> L2
+  P1 --> L3
+
+  L1 --> D1
+  L2 --> D1
+  L3 --> D1
+```
+```
