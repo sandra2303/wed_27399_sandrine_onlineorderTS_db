@@ -1,8 +1,6 @@
-
-```md
 # 📊 Key Performance Indicators (KPIs) – Online Order Tracking System
 
-This document defines the Key Performance Indicators (KPIs) used for analyzing performance, customer behavior, product trends, delivery efficiency, and overall system health for the Online Order Tracking System (OOTS).
+This document defines the Key Performance Indicators (KPIs) used for analyzing performance, customer behavior, product trends, delivery efficiency, and overall system health for the Online Order Tracking System.
 
 ---
 
@@ -68,5 +66,3 @@ This document defines the Key Performance Indicators (KPIs) used for analyzing p
 | **Payment Audit Compliance** | % of payment operations logged | 100% | Monthly |
 | **Data Integrity** | FK/PK violations | 0 | Daily |
 | **Security Violations** | Unauthorized access attempts | 0 | Monthly |
-
-```
