@@ -58,12 +58,12 @@ ALTER SESSION SET CONTAINER = WED_27399_ONLINEORDER_DB;
 ### 3. Run SQL Scripts  
 Inside the **database/scripts** folder, run the files:
 
-1️⃣ [create_tables.sql](database/scripts/created_tables.sql) 
-2️⃣ [insertion.sql](database/scripts/insertion.sql)
-3️⃣ [functions_script.sql](database/scripts/functions_script.sql.sql)
-4️⃣ [cusor_script.sql](database/scripts/cursor_script.sql)
-5️⃣ [package_script.sql](database/scripts/package_script.sql)
-6️⃣ [simple_trigger.sql](database/scripts/simple_script.sql)
+1️⃣ [created_tables.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/created_tables.sql)
+2️⃣ [insertion.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/insertion.sql)
+3️⃣ [functions_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/function_script.sql)
+4️⃣ [cursor_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/cursor_script.sql)
+5️⃣ [package_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/package_script.sql)
+6️⃣ [simple_trigger.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/simple_trigger.sql)
 
 > These create all system tables (CUSTOMERS, PRODUCTS, ORDERS, ORDER_ITEMS, PAYMENTS), business logic, and audit functionality.
 
@@ -71,12 +71,12 @@ Inside the **database/scripts** folder, run the files:
 
 ## 📚 Links to Documentation
 
-- [Data Dictionary](documentation/data_dictionary.md) – Details of all tables, columns, types, and constraints.
-- [Architecture](documentation/architecture.md) – Overview of the system design and database structure.
-- [Design Decisions](documentation/design_decisions.md) – Explanation of key design choices made during development.
-- [BI Requirements](business_intelligence/BI_requirements.md) – KPIs, dashboards, and analytical queries.
-- [Dashboards](business_intelligence/Dashboards.md) – Mockups of BI dashboards.
-- [KPI Definitions](business_intelligence/KPI_definitions.md) – Detailed description of KPIs used in the system.  
+- [Data Dictionary](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Documentations/data_dictionary.md) – Details of all tables, columns, types, and constraints.
+- [Architecture](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Documentations/architecture.md) – Overview of the system design and database structure.
+- [Design Decisions](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Documentations/design_decisions.md) – Explanation of key design choices made during development.
+- [BI Requirements](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Business_Inteligence/BI_requirements.md) – KPIs, dashboards, and analytical queries.
+- [Dashboards](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Business_Inteligence/Dashboard.md) – Mockups of BI dashboards.
+- [KPI Definitions](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Business_Inteligence/KPI_definition.md) – Detailed description of KPIs used in the system.  
 - `screenshots/` – Contains all system screenshots (OEM, SQL Developer, tables, results)
 
 ---
