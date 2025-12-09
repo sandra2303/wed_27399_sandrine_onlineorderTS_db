@@ -56,14 +56,14 @@ ALTER SESSION SET CONTAINER = WED_27399_ONLINEORDER_DB;
 ---
 
 ### 3. Run SQL Scripts  
-Inside the **database/scripts** folder, run the files in order:
+Inside the **database/scripts** folder, run the files:
 
-1️⃣ `created_tables.sql`  
-2️⃣ `insertion.sql`  
-3️⃣ `functions_script.sql`  
-4️⃣ `cursor_script.sql`  
-5️⃣ `package_script.sql`  
-6️⃣ `simple_trigger.sql`
+1️⃣ [create_tables.sql](database/scripts/created_tables.sql) 
+2️⃣ [insertion.sql](database/scripts/insertion.sql)
+3️⃣ [functions_script.sql](database/scripts/functions_script.sql.sql)
+4️⃣ [cusor_script.sql](database/scripts/cursor_script.sql)
+5️⃣ [package_script.sql](database/scripts/package_script.sql)
+6️⃣ [simple_trigger.sql](database/scripts/simple_script.sql)
 
 > These create all system tables (CUSTOMERS, PRODUCTS, ORDERS, ORDER_ITEMS, PAYMENTS), business logic, and audit functionality.
 
@@ -71,12 +71,12 @@ Inside the **database/scripts** folder, run the files in order:
 
 ## 📚 Links to Documentation
 
-- `documentation/data_dictionary.md`  
-- `documentation/architecture.md`  
-- `documentation/design_decisions.md`  
-- `business_intelligence/bi_requirements.md`  
-- `business_intelligence/dashboards.md`  
-- `business_intelligence/kpi_definitions.md`  
+- [Data Dictionary](documentation/data_dictionary.md) – Details of all tables, columns, types, and constraints.
+- [Architecture](documentation/architecture.md) – Overview of the system design and database structure.
+- [Design Decisions](documentation/design_decisions.md) – Explanation of key design choices made during development.
+- [BI Requirements](business_intelligence/BI_requirements.md) – KPIs, dashboards, and analytical queries.
+- [Dashboards](business_intelligence/Dashboards.md) – Mockups of BI dashboards.
+- [KPI Definitions](business_intelligence/KPI_definitions.md) – Detailed description of KPIs used in the system.  
 - `screenshots/` – Contains all system screenshots (OEM, SQL Developer, tables, results)
 
 ---
