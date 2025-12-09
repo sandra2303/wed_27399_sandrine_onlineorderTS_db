@@ -96,9 +96,14 @@ graph TD
         D_a(Tables, PKs, FKs, Indexes)
     end
 
+---
+
 ### 8. Architecture Justification
-Modular → easier maintenance and upgrades
-Secure → Oracle roles + constraints + error handling
-Scalable → future modules can be added
-High performance → optimized with indexes and PL/SQL
+* Modular → easier maintenance and upgrades
+* Secure → Oracle roles + constraints + error handling
+* Scalable → future modules can be added
+* High performance → optimized with indexes and PL/SQL
+
 Reliable → relational integrity through FK/PK constraints
+
+---
