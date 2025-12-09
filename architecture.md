@@ -1,4 +1,3 @@
-```markdown
 # ✅ SYSTEM ARCHITECTURE DOCUMENT
 ## Online Order Tracking System
 
@@ -104,5 +103,3 @@ flowchart TD
   L1 --> D1
   L2 --> D1
   L3 --> D1
-```
-```
