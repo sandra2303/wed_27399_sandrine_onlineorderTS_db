@@ -3,118 +3,58 @@ Below are your BI dashboard mockups rewritten for the Online Order Tracking Syst
 
 ---
 
-## Dashboard 1: Executive Summary
+## 1. 📊 Executive Financial Summary Dashboard
+*Focus: Revenue Trends, Growth, and High-Level Metrics (Driven by LAG() query)*
 
-### 🎯 Key Performance Indicators (KPIs)
-| KPI | Value | Change |
-| :--- | :--- | :--- |
-| **Total Orders (Month)** | 1,250 | ▲ 8% |
-| **Total Revenue** | $185,000 | ▲ 6.1% |
-| **Delivery Success Rate** | 94% | ▲ 2% |
-| **Refund/Failed Orders** | 3% | ▼ 1% |
-
-### 📈 Trend Analysis – Orders per Month
-| Month | Orders |
-| :--- | :--- |
-| Jan | 980 |
-| Feb | 1,020 |
-| Mar | 1,150 |
-| Apr | 1,200 |
-| May | 1,250 |
-
-> ↗ 12% growth in last quarter
-
-### 📊 Product Category Performance
-| Category | Sales | Visual |
-| :--- | :--- | :--- |
-| Electronics | 45% | ████████████████████ |
-| Clothing | 30% | ██████████████▌ |
-| Home Appliances | 15% | ████████▌ |
-| Accessories | 10% | ██████ |
-
-### 🔴 Critical Alerts
-* 42 orders delayed beyond expected delivery time
-* 15 products low in stock
-* 8 orders failed payment verification
-* 2 couriers with frequent delays
-
----
-
-## Dashboard 2: Audit & Compliance Dashboard
-
-### 🔐 Compliance Summary
-| Metric | Value | Notes |
-| :--- | :--- | :--- |
-| **Total Operations** | 3,800 | Includes all DML actions |
-| **Successful Transactions** | 3,720 | (98%) |
-| **Payment Errors** | 45 | (1.2%) |
-| **Delivery Failures** | 35 | (0.8%) |
-
-### ⚠️ Common Issues
-| Issue Type | Count | Percentage |
-| :--- | :--- | :--- |
-| Payment Gateway Errors | 45 | 56% |
-| Delivery Failures | 35 | 44% |
-| Data Entry Issues | 0 | 0% |
-
-### 👥 Top System Users (Admin + Couriers)
-| User | Operations | Visual |
-| :--- | :--- | :--- |
-| ADMIN | 850 | ███████████████████████ |
-| COURIER_01 | 600 | ███████████████████ |
-| COURIER_02 | 550 | ██████████████████▌ |
-| SALES_AGENT_01 | 420 | ███████████████ |
-| OTHERS | 300 | ██████████ |
-
-### 📅 Recent Issues (Last 7 Days)
-| Date | User | Issue |
-| :--- | :--- | :--- |
-| 07/12 | COURIER_01 | Delivery delay |
-| 06/12 | ADMIN | Payment rollback |
-| 05/12 | COURIER_03 | Misrouted package |
-| 04/12 | SALES_AGENT_02 | Incorrect item quantity |
-
----
-
-## Dashboard 3: Performance & Resource Dashboard
-
-### ⚡ System Performance
-| Metric | Value | Status |
-| :--- | :--- | :--- |
-| **DB Response Time** | 0.9s | Good |
-| **CPU Utilization** | 40% | Normal |
-| **Memory Usage** | 70% | Slightly high |
-| **Active Sessions** | 22 | Normal |
-
-### 📈 Resource Trends – Active Orders
-| Day | Active Orders | Visual |
-| :--- | :--- | :--- |
-| Mon | 180 | █████████████████ |
-| Tue | 190 | ██████████████████ |
-| Wed | 200 | ███████████████████ |
-| Thu | 185 | █████████████████▌ |
-| Fri | 175 | ████████████████▌ |
-| Sat | 160 | ███████████████ |
-| Sun | 150 | ██████████████ |
-
-### 🏃 Procedure Performance
-| Procedure | Execution Time | Visual |
-| :--- | :--- | :--- |
-| `process_order_payment` | 0.8s | ██████████████ |
-| `assign_delivery_courier` | 1.1s | █████████████████ |
-| `generate_sales_report` | 2.0s | █████████████████████ |
-| `update_stock_levels` | 1.4s | ██████████████████ |
-
-### 💾 Storage Utilization
-| Table | Rows | Size | Growth |
+| KPI | Value | Trend | Status |
 | :--- | :--- | :--- | :--- |
-| ORDERS | 2,500 | 20 MB | ▲ 10% |
-| ORDER_ITEMS | 6,000 | 45 MB | ▲ 12% |
-| PAYMENT | 2,500 | 15 MB | ▲ 8% |
-| DELIVERY | 2,500 | 30 MB | ▲ 15% |
-| CUSTOMERS | 1,000 | 12 MB | ▲ 6% |
+| **Total Lifetime Revenue** | **RWF 145,500,000** | ▲ 12% YTD | **ON TRACK** |
+| **Orders Processed** | 3,500 | ▲ 450 This Month | **HIGH VOLUME** |
+| **Average Order Value (AOV)** | RWF 41,571 | ▼ -1.5% MoM | **ATTENTION** |
 
-### 🔔 Performance Alerts
-* `generate_sales_report` approaching threshold
-* DELIVERY table growing fast → recommend archiving completed deliveries
-* Increase memory allocation for peak hours
+### Month-over-Month Revenue Growth
+| Month | Monthly Revenue (RWF) | Previous Month Revenue (RWF) | MoM Growth (%) |
+| :--- | :--- | :--- | :--- |
+| **Dec 2025** | **18,500,000** | 15,200,000 | **+21.71%** |
+| **Nov 2025** | 15,200,000 | 12,900,000 | +17.83% |
+| **Oct 2025** | 12,900,000 | 14,100,000 | -8.51% |
+| **Sep 2025** | 14,100,000 | 10,500,000 | +34.28% |
+
+---
+
+## 2. 📦 Product & Inventory Health Dashboard
+*Focus: Sales Performance and Stocking Priorities (Driven by RANK() query)*
+
+| KPI | Value | Status | Action |
+| :--- | :--- | :--- | :--- |
+| **Stock-Out Events (Last 30 Days)** | **4** | 🔴 **HIGH** | Review Safety Stock |
+| **Total Inventory Value** | RWF 25,000,000 | Stable | N/A |
+| **Low Stock Count (QTY < 10)** | 7 Products | 🟡 **MODERATE** | Reorder Required |
+
+### Top 5 Bestsellers by Revenue
+| Rank | Product Name | Category | Total Revenue (RWF) | Total Quantity Sold |
+| :--- | :--- | :--- | :--- | :--- |
+| **1** | **Laptop** | Electronics | **55,000,000** | 110 |
+| **2** | **Smartphone** | Electronics | 42,000,000 | 140 |
+| **3** | Coffee Grinder | Home Goods | 15,000,000 | 60 |
+| **4** | Polo Shirt | Apparel | 8,500,000 | 250 |
+| **5** | Backpack (Large) | Accessories | 6,200,000 | 85 |
+
+---
+
+## 3. 🔒 Audit & Security Compliance Dashboard
+*Focus: Verification of Phase VII Triggers and Rules*
+
+| Audit Metric | Value | Compliance | Status |
+| :--- | :--- | :--- | :--- |
+| **Security Rule Violations** | **3** | 100% Blocked | **SECURE** |
+| **Audit Log Size** | 15,400 Entries | Normal | N/A |
+| **Audit Logging Uptime** | 100% | Full Coverage | **CRITICAL** |
+
+### Recent Trigger/Restriction Events
+| Log Date | User Name | Action Type | Entity Name | Message |
+| :--- | :--- | :--- | :--- | :--- |
+| **2025-12-25** | SANDRINE | **DENIED** | ORDERS | INSERT blocked: Testing Holiday Restriction. |
+| **2025-12-08** | SANDRINE | **DENIED** | CUSTOMERS | DML attempted on restricted day (STATEMENT BLOCKED). |
+| **2025-12-07** | SANDRINE | **ALLOWED** | ORDERS | INSERT allowed: DML executed during weekend/permitted time. |
+| **2025-12-07** | SYSTEM | EXECUTE | CUSTOMERS | UPDATED by SANDRINE. Old Email: old@mail.com. |
