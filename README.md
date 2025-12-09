@@ -58,12 +58,12 @@ ALTER SESSION SET CONTAINER = WED_27399_ONLINEORDER_DB;
 ### 3. Run SQL Scripts  
 Inside the **database/scripts** folder, run the files:
 
-1️⃣  [created_tables.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/created_tables.sql)
-2️⃣  [insertion.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/insertion.sql)
-3️⃣  [functions_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/function_script.sql)
-4️⃣  [cursor_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/cursor_script.sql)
-5️⃣  [package_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/package_script.sql)
-6️⃣  [simple_trigger.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/simple_trigger.sql)
+1️⃣  [created_tables.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/created_tables.sql) 
+2️⃣  [insertion.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/insertion.sql) 
+3️⃣  [functions_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/function_script.sql) 
+4️⃣  [cursor_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/cursor_script.sql) 
+5️⃣  [package_script.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/package_script.sql) 
+6️⃣  [simple_trigger.sql](https://github.com/sandra2303/wed_27399_sandrine_onlineorderTS_db/blob/main/Database/scripts/simple_trigger.sql) 
 
 > These create all system tables (CUSTOMERS, PRODUCTS, ORDERS, ORDER_ITEMS, PAYMENTS), business logic, and audit functionality.
 
